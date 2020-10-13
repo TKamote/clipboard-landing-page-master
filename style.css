@@ -3,28 +3,228 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
 }
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-/*:root {
-
-
-    - Strong Cyan: hsl(171, 66%, 44%)
-- Light Blue: hsl(233, 100%, 69%)
-- Dark Grayish Blue: hsl(210, 10%, 33%)
-- Grayish Blue: hsl(201, 11%, 66%)
-}
-
-Body Copy
-
+/*Body Copy
 - Font size: 18px
-
 ### Fonts
-
 - Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
 - Weights: 400, 600*/
+
+.box {
+    padding: 10px;
+    margin: 0;   
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 370px;
+    padding-left: 20px;  
+    padding-right: 20px;
+}
+.container {
+    background-color: azure;
+    display: grid;
+    grid-template-rows: repeat(15, auto);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-areas: 
+    "box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+    "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+    "box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box6 box6 box6 box6 box6 box6 box6 box6 box6 box6"
+    "box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
+    "box8 box8 box8 box8 box8 box8 box8 box8 box8 box8"
+    "box9 box9 box9 box9 box9 box9 box9 box9 box9 box9"
+    "box10 box10 box10 box10 box10 box10 box10 box10 box10 box10"
+    "box11 box11 box11 box11 box11 box11 box11 box11 box11 box11"
+    "box12 box12 box12 box12 box12 box12 box12 box12 box12 box12"
+    "box13 box13 box13 box13 box13 box13 box13 box13 box13 box13"
+    "box14 box14 box14 box14 box14 box14 box14 box14 box14 box14"
+    "box15 box15 box15 box15 box15 box15 box15 box15 box15 box15"
+    ;
+}
+.box1 {
+    grid-area: box1;
+    background-image: url(images/bg-header-desktop.png);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+h2, h3, h4, h5, p {
+    text-align: center;  
+}
+h2, h3, h4, h5 {
+    padding: 20px;
+}
+.box1 img {
+    max-width: 30%;
+    height: auto;
+    padding: 60px 0 40px 0;
+}
+.box2 {
+    grid-area: box2;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    padding-bottom: 50px;
+}
+.box2 button {
+    width: 90%;
+    height: auto;  
+    margin: 8px;
+}  
+button {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: .8rem;
+}
+.btn1 {  
+    background-color: var(--strong-cyan);
+}
+.btn2 {   
+    background-color: var(--light-blue);
+}
+.box3 {
+    grid-area: box3;
+    background-color: cornsilk;
+}
+.box4 {
+    grid-area: box4;
+}
+.box4 img {
+    width: 100%;
+    height: auto;
+}
+.box5 {
+    grid-area: box5;
+    background-color: cornsilk;
+}
+.box6 {
+    grid-area: box6;
+}
+.box7 {
+    grid-area: box7;
+    background-color: cornsilk;
+}
+.box8 {
+    grid-area: box8;
+}
+.box9 {
+    grid-area: box9;
+    background-color: cornsilk;
+    justify-items: center;
+}
+.box9 img {
+    width: 100%;
+    height: auto;
+}
+.box10 {
+    grid-area: box10;
+}
+.box11 {
+    grid-area: box11;
+    background-color: cornsilk;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.box11 .box11-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; 
+    padding-bottom: 25px; 
+}
+.box11 .box11-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    padding-bottom: 25px; 
+}
+.box11 .box11-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    padding-bottom: 25px; 
+}
+
+.box11 img {
+    width: 12%;
+    height: auto;
+    margin: 10px;
+    box-sizing: border-box;
+    
+}
+.box12 {
+    grid-area: box12;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.box12 img {
+    width: 40%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.box13 {
+    grid-area: box13;
+    background-color: cornsilk;
+}
+.box14 {
+    grid-area: box14;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    padding-bottom: 50px;
+}
+.box14 button {
+    width: 90%;
+    height: auto; 
+    margin: 8px;
+}  
+.box15 {
+    grid-area: box15;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; 
+    box-sizing: border-box; 
+    line-height: 1.8rem;
+    background-color: chocolate;
+}
+.box15 .logo2 img {
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    display: grid;
+    background-color: chartreuse;
+}
+.box15 .social-media {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center; 
+    justify-content: space-around;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box15 .social-media img {
+    width: 20%;
+    height: auto; 
+    box-sizing: border-box;
+    padding-top: 30px;
+    margin: 0;
+    background-color: white;
+}
