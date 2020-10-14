@@ -48,11 +48,13 @@ body {
     "box13 box13 box13 box13 box13 box13 box13 box13 box13 box13"
     "box14 box14 box14 box14 box14 box14 box14 box14 box14 box14"
     "box15 box15 box15 box15 box15 box15 box15 box15 box15 box15"
+    "box16 box16 box16 box16 box16 box16 box16 box16 box16 box16"
     ;
 }
 .box1 {
     grid-area: box1;
     background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;  
@@ -64,7 +66,13 @@ h2, h3, h4, h5, p {
     text-align: center;  
 }
 h2, h3, h4, h5 {
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
+    color: var(--dark-grayish-blue);
+}
+p {
+    color: var(--grayish-blue);
+    font-size: .9em;
+    line-height: 30px;
 }
 .box1 img {
     max-width: 30%;
@@ -85,20 +93,22 @@ h2, h3, h4, h5 {
 }  
 button {
     box-sizing: border-box;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 14px;
+    border-radius: 25px;
     color: white;
     font-size: .8rem;
 }
 .btn1 {  
     background-color: var(--strong-cyan);
+    border: none;
 }
 .btn2 {   
     background-color: var(--light-blue);
+    border: none;
 }
 .box3 {
     grid-area: box3;
-    background-color: cornsilk;
+    padding: 40px 20px;
 }
 .box4 {
     grid-area: box4;
@@ -109,22 +119,21 @@ button {
 }
 .box5 {
     grid-area: box5;
-    background-color: cornsilk;
 }
 .box6 {
     grid-area: box6;
 }
 .box7 {
     grid-area: box7;
-    background-color: cornsilk;
 }
 .box8 {
     grid-area: box8;
+    padding-top: 100px;
 }
 .box9 {
     grid-area: box9;
-    background-color: cornsilk;
     justify-items: center;
+    padding: 30px 0;
 }
 .box9 img {
     width: 100%;
@@ -132,10 +141,10 @@ button {
 }
 .box10 {
     grid-area: box10;
+    padding: 30px 0;
 }
 .box11 {
     grid-area: box11;
-    background-color: cornsilk;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -158,13 +167,11 @@ button {
     justify-items: center;  
     padding-bottom: 25px; 
 }
-
 .box11 img {
     width: 12%;
     height: auto;
     margin: 10px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 .box12 {
     grid-area: box12;
@@ -180,14 +187,14 @@ button {
 }
 .box13 {
     grid-area: box13;
-    background-color: cornsilk;
+    padding: 80px 20px 30px 20px;
 }
 .box14 {
     grid-area: box14;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;  
-    padding-bottom: 50px;
+    padding-bottom: 120px;
 }
 .box14 button {
     width: 90%;
@@ -198,33 +205,36 @@ button {
     grid-area: box15;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center; 
-    box-sizing: border-box; 
-    line-height: 1.8rem;
-    background-color: chocolate;
-}
-.box15 .logo2 img {
-    width: 32%;
+    justify-items: center;  
+    width: 100%;
     height: auto;
-    box-sizing: border-box;
-    display: grid;
-    background-color: chartreuse;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color:hsl(20, 16%, 96%);
 }
-.box15 .social-media {
-    width: 80%;
+.box15 img {
+    max-width: 45px;
     height: auto;
+    padding: 30px 0 30px 0;
+}
+
+.box16 {
+    grid-area: box16;
+    background-color:hsl(20, 16%, 96%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center; 
-    justify-content: space-around;
-    margin: 0;
+    justify-items: center;
     box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
 }
-.box15 .social-media img {
-    width: 20%;
-    height: auto; 
+
+.box16 img {
+    max-width: 30%;
+    height: auto;
     box-sizing: border-box;
-    padding-top: 30px;
-    margin: 0;
-    background-color: white;
+    
+    align-self: center;
 }
