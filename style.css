@@ -9,58 +9,36 @@
     --dark-grayish-blue: hsl(210, 10%, 33%);
     --grayish-blue: hsl(201, 11%, 66%);
 }
-/*Body Copy
-- Font size: 18px
-### Fonts
+/*### Fonts
 - Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
 - Weights: 400, 600*/
 
-.box {
-    padding: 10px;
-    margin: 0;   
-}
 body {
+    background-color: rgb(148, 58, 207);
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
     box-sizing: border-box;
-    width: 370px;
-    padding-left: 20px;  
-    padding-right: 20px;
+    max-width: 1440px;
+    height: auto;
 }
 .container {
-    background-color: azure;
     display: grid;
-    grid-template-rows: repeat(15, auto);
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-areas: 
-    "box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
-    "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
-    "box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
-    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
-    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
-    "box6 box6 box6 box6 box6 box6 box6 box6 box6 box6"
-    "box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
-    "box8 box8 box8 box8 box8 box8 box8 box8 box8 box8"
-    "box9 box9 box9 box9 box9 box9 box9 box9 box9 box9"
-    "box10 box10 box10 box10 box10 box10 box10 box10 box10 box10"
-    "box11 box11 box11 box11 box11 box11 box11 box11 box11 box11"
-    "box12 box12 box12 box12 box12 box12 box12 box12 box12 box12"
-    "box13 box13 box13 box13 box13 box13 box13 box13 box13 box13"
-    "box14 box14 box14 box14 box14 box14 box14 box14 box14 box14"
-    "box15 box15 box15 box15 box15 box15 box15 box15 box15 box15"
-    "box16 box16 box16 box16 box16 box16 box16 box16 box16 box16"
-    ;
+    grid-template-columns: 1fr;
+    background-color: whitesmoke;
+    border: solid 1px black;
+    margin: 0 50px;
 }
 .box1 {
-    grid-area: box1;
     background-image: url(images/bg-header-desktop.png);
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;  
+    padding-top: 4rem;
+    padding-bottom: 1.2rem;
+    padding-right: 12rem;
+    padding-left: 12rem;
     width: 100%;
     height: auto;
-    padding-top: 30px;
 }
 h2, h3, h4, h5, p {
     text-align: center;  
@@ -74,167 +52,317 @@ p {
     font-size: .9em;
     line-height: 30px;
 }
-.box1 img {
-    max-width: 30%;
+.box1 .logo1 {
+    display: grid;
+    width: 100%;
     height: auto;
-    padding: 60px 0 40px 0;
+    justify-items: center;
 }
-.box2 {
-    grid-area: box2;
+.box1 .logo1 img {
+    width: 15%;
+    height: auto;
+}
+.box1 .box1-text {
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;  
-    padding-bottom: 50px;
 }
-.box2 button {
-    width: 90%;
-    height: auto;  
-    margin: 8px;
-}  
+.box2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);    
+}
 button {
     box-sizing: border-box;
     padding: 14px;
     border-radius: 25px;
     color: white;
     font-size: .8rem;
+    margin: 20px 20px;
 }
-.btn1 {  
+.box2 .btn1 {  
     background-color: var(--strong-cyan);
     border: none;
+    display: grid;
+    grid-column: 2 / 3;
 }
-.btn2 {   
+.box2 .btn2 {   
     background-color: var(--light-blue);
     border: none;
+    display: grid;
+    grid-column: 3 / 4;
 }
 .box3 {
-    grid-area: box3;
-    padding: 40px 20px;
+    margin: 0 30px;
+    padding-top: 80px;
+    padding-bottom: 50px;   
+    padding-right: 12rem;
+    padding-left: 12rem;
 }
 .box4 {
-    grid-area: box4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 10px 50px 0;
 }
 .box4 img {
     width: 100%;
     height: auto;
+    margin-top: 30px;
+}
+.box40 {
+    display: grid;
+    padding: 2rem 8rem 2rem 5rem;
+}
+.box40 .box40-h4, .box40-p {
+    text-align: left;
+    padding-left: 0;
 }
 .box5 {
-    grid-area: box5;
+    display: grid;
+    margin: 50px 30px 50px 30px;
+    padding-right: 12rem;
+    padding-left: 12rem;
 }
 .box6 {
-    grid-area: box6;
+    display: grid;
+    justify-items: center;
+}
+.box6 img {
+    width: 60%;
+    height: auto;
 }
 .box7 {
-    grid-area: box7;
+    padding-right: 12rem;
+    padding-left: 12rem;
 }
 .box8 {
-    grid-area: box8;
-    padding-top: 100px;
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 5rem;
+}
+.box8 .box8-1 {
+    display: grid;
+    justify-items: center;
+    padding: 30px 5px;
+   
+}
+.box8 .box8-2 {
+    display: grid;
+    justify-items: center;
+    padding: 30px 5px;
+}
+.box8 .box8-3 {
+    display: grid;
+    justify-items: center;
+    padding: 30px 5px;
+  
+}
+.box8 img {
+    
 }
 .box9 {
-    grid-area: box9;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
-    padding: 30px 0;
+    margin: 30px auto;
 }
 .box9 img {
-    width: 100%;
-    height: auto;
+    padding: 10px;
+    width: 65%;
+    height: auto;  
 }
 .box10 {
-    grid-area: box10;
-    padding: 30px 0;
+    display: grid;
+    justify-items: center;
+    padding-top: 4rem;
+    padding-bottom: 1.2rem;
+    padding-right: 12rem;
+    padding-left: 12rem;
 }
 .box11 {
-    grid-area: box11;
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(4,1fr);
+    padding-bottom: 5rem;
 }
-.box11 .box11-1 {
+.box11 .btn1 {  
+    background-color: var(--strong-cyan);
+    border: none;
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center; 
-    padding-bottom: 25px; 
+    grid-column: 2 / 3;
 }
-.box11 .box11-2 {
+.box11 .btn2 {   
+    background-color: var(--light-blue);
+    border: none;
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;  
-    padding-bottom: 25px; 
-}
-.box11 .box11-3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;  
-    padding-bottom: 25px; 
-}
-.box11 img {
-    width: 12%;
-    height: auto;
-    margin: 10px;
-    box-sizing: border-box;   
+    grid-column: 3 / 4;
 }
 .box12 {
-    grid-area: box12;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: grid;  
+    grid-template-columns: 1fr 2fr 1fr; 
+    background-color: rgb(235, 217, 217);
+    color: black;
+} 
+#box12-logo {
+    display: grid; 
+    grid-template-columns: 1fr; 
     justify-items: center;
-}
-.box12 img {
-    width: 40%;
-    height: auto;
-    box-sizing: border-box;
-    padding: 20px;
-}
-.box13 {
-    grid-area: box13;
-    padding: 80px 20px 30px 20px;
-}
-.box14 {
-    grid-area: box14;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;  
-    padding-bottom: 120px;
-}
-.box14 button {
-    width: 90%;
-    height: auto; 
-    margin: 8px;
-}  
-.box15 {
-    grid-area: box15;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;  
     width: 100%;
     height: auto;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color:hsl(20, 16%, 96%);
+} 
+#box12-logo img {
+    max-width: 15%;
+    height: auto;  
 }
-.box15 img {
-    max-width: 45px;
-    height: auto;
-    padding: 30px 0 30px 0;
+.box12 .box12-text {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);  
+    align-content: center;
+    justify-self: flex-start;
+} 
+.box12 .box12-text p {
+    padding: 0 20px;
 }
-
-.box16 {
-    grid-area: box16;
-    background-color:hsl(20, 16%, 96%);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    padding-bottom: 40px;
-    margin-bottom: 30px;
+.box12 .box12-social-media {
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr); 
+    align-content: center;
+    margin: 0 auto;
+} 
+.box12-social-media img {
+    padding: 0 10px;
 }
-
-.box16 img {
-    max-width: 30%;
-    height: auto;
-    box-sizing: border-box;
-    
-    align-self: center;
+@media screen and (min-width: 980px) {
+    body {
+        background-color: rgb(224, 224, 195);
+    }
+}
+@media screen and (max-width: 370px) {
+    body {
+       background-color: yellow;
+    }
+    .container {
+        margin: 0 2px;
+    }
+    .box1 {
+        padding-right: 2px;
+        padding-left: 2px;  
+    }
+    .box2 {
+        grid-template-columns: 1fr;  
+    }
+    .box2 .btn1 {  
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .box2 .btn2 {   
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .box3 {
+        margin: 0 2px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    .box4 {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .box4 img {
+        width: 100%;
+        height: auto;
+        justify-self: center;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    .box40 {
+        grid-template-columns: 1fr;
+        padding: 2px 8px 2px 5px;
+    }
+    .box40 .box40-h4, .box40-p {
+        text-align: center;
+    }
+    .box5 {
+        margin: 50px 0 50px 0;
+        padding-top: 1.5rem;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    .box6 {
+    }
+    .box6 img {
+        width: 90%;
+        height: auto;
+    }
+    .box7 {
+        padding: 1.5rem .3rem 1.5rem .3rem;   
+    }
+    .box8 {
+        grid-template-columns: 1fr;
+        margin: 0 2px;
+    }
+    .box8 .box8-1 {
+        padding: 5px;
+        margin-bottom: 1.5rem;  
+    }
+    .box8 .box8-2 {
+        padding: 5px;
+        margin-bottom: 1.5rem;  
+    }
+    .box8 .box8-3 {
+        padding: 5px;
+        margin-bottom: 1.5rem;  
+    }
+    .box8 img {
+        
+    }
+    .box9 {
+        grid-template-columns: 1fr;
+        margin: 30px auto 20px auto;
+    }
+    .box9 img {
+        padding: 20px;
+        width: 70%;
+        height: auto;  
+    }
+    .box10 {
+        padding: 1rem 1rem;
+    }
+    .box11 {
+        grid-template-columns: 1fr; 
+        padding: 1rem 1rem;
+    }
+    .box11 .btn1 {  
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .box11 .btn2 {   
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .box12 {
+        grid-template-columns: 1fr; 
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    } 
+    #box12-logo {
+       
+    } 
+    #box12-logo img {
+       
+    }
+    .box12 .box12-text {
+        grid-template-columns: 1fr;  
+        justify-self: center;
+        padding-top: 1.5rem;  
+    } 
+    .box12 .box12-text p {
+        padding: 0 20px;
+        line-height: 30px;
+    }
+    .box12 .box12-social-media {
+       
+    } 
+    .box12-social-media img {
+        padding: 20px 10px;
+    }
 }
