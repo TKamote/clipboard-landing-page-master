@@ -229,11 +229,6 @@ button {
 .box12-social-media img {
     padding: 0 10px;
 }
-@media screen and (min-width: 980px) {
-    body {
-        background-color: rgb(224, 224, 195);
-    }
-}
 @media screen and (max-width: 370px) {
     body {
        background-color: yellow;
@@ -361,6 +356,138 @@ button {
     }
     .box12 .box12-social-media {
        
+    } 
+    .box12-social-media img {
+        padding: 20px 10px;
+    }
+}
+@media screen and (max-width: 980px) {  
+    body {
+        background-color: rgb(217, 195, 235);
+    }
+    .container {
+        margin: 0 2px;
+    }
+    .box1 {
+        padding-right: 2px;
+        padding-left: 2px;  
+    }
+    .box2 {
+        grid-template-columns: 1fr;  
+    }
+    .box2 .btn1 {  
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .box2 .btn2 {   
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .box3 {
+        margin: 0 2px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    .box4 {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .box4 img {
+        width: 100%;
+        height: auto;
+        justify-self: center;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    .box40 {
+        grid-template-columns: 1fr;
+        padding: 2px 8px 2px 5px;
+    }
+    .box40 .box40-h4, .box40-p {
+        text-align: center;
+    }
+    .box5 {
+        margin: 50px 0 50px 0;
+        padding-top: 1.5rem;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    .box6 {
+    }
+    .box6 img {
+        width: 90%;
+        height: auto;
+    }
+    .box7 {
+        padding: 1.5rem .3rem 1.5rem .3rem;   
+    }
+    .box8 {
+        grid-template-columns: 1fr;
+        margin: 0 2px;
+    }
+    .box8 .box8-1 {
+        padding: 5px;
+        margin-bottom: 1.5rem;  
+    }
+    .box8 .box8-2 {
+        padding: 5px;
+        margin-bottom: 1.5rem;  
+    }
+    .box8 .box8-3 {
+        padding: 5px;
+        margin-bottom: 1.5rem;  
+    }
+    .box8 img {
+        
+    }
+    .box9 {
+        grid-template-columns: 1fr;
+        margin: 30px auto 20px auto;
+    }
+    .box9 img {
+        padding: 20px;
+        width: 70%;
+        height: auto;  
+    }
+    .box10 {
+        padding: 1rem 1rem;
+    }
+    .box11 {
+        grid-template-columns: 1fr; 
+        padding: 1rem 1rem;
+    }
+    .box11 .btn1 {  
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .box11 .btn2 {   
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .box12 {
+        grid-template-columns: 1fr; 
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    } 
+    #box12-logo {
+        
+    } 
+    #box12-logo img {
+        
+    }
+    .box12 .box12-text {
+        grid-template-columns: 1fr;  
+        justify-self: center;
+        padding-top: 1.5rem;  
+    } 
+    .box12 .box12-text p {
+        padding: 0 20px;
+        line-height: 30px;
+    }
+    .box12 .box12-social-media {
+        
     } 
     .box12-social-media img {
         padding: 20px 10px;
